@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobbing Island</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .bobbing-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .bobbing-image {
+            width: 400px; /* Adjust to your desired size */
+            animation: bob 3s infinite ease-in-out;
+        }
+
+        @keyframes bob {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bobbing-container">
+        <img src="https://files.oaiusercontent.com/file-8k93dfjBLWacwouwwQSX9d?se=2024-12-06T19%3A51%3A20Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DA%2520futuristic%2520floating%2520island.png&sig=yei0j01JyEs/VlQ0bEn0HvFxhHiZE/H0pmojUvVPwFI%3D" alt="Floating Island" class="bobbing-image">
+    </div>
+</body>
+</html>
